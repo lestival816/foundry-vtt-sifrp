@@ -1,0 +1,83 @@
+{
+  "id": "sifrp",
+  "title": "A Song of Ice and Fire RPG (Unofficial)",
+  "description": "An unofficial system implementation for of A Song of Ice and Fire Roleplaying game by Green Ronin Publishing. Based on the Boilerplate System by Asacolips.",
+  "authors": [
+    {
+      "name": "Lestival",
+      "discord": ".lestival"
+    }
+  ],
+    "documentTypes": {
+    "Actor": {
+        "character": {
+            "htmlFields": ["biography"]
+        },
+        "npc": {
+            "htmlFields": ["biography"]
+        }
+    },
+    "Item": {
+        "gear": {
+            "htmlFields": ["description"]
+        },
+        "weapon": {
+            "htmlFields": ["description"]
+        },
+        "mount": {
+            "htmlFields": ["description"]
+        }
+    }
+  },
+  "flags": {
+    "hotReload": {
+      "extensions": ["css", "html", "hbs", "json"],
+      "paths": ["css", "lang", "templates"]
+    }
+  },
+  "url": "Replace this with a link to your public repository",
+  "license": "LICENSE.txt",
+  "readme": "README.md",
+  "bugs": "Replace this with a link to file issues or tickets",
+  "changelog": "CHANGELOG.md",
+  "media": [
+    {
+      "type": "setup",
+      "url": "systems/sifrp/assets/iron-throne-logo.png",
+      "thumbnail": "systems/sifrp/assets/iron-throne-logo.png"
+    }
+  ],
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13.351",
+    "verified": "13.351"
+  },
+  "esmodules": ["module/sifrp.mjs"],
+  "styles": ["css/sifrp.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "fr",
+      "name": "French",
+      "path": "lang/fr.json"
+    }
+  ],
+  "packs": [],
+  "packFolders": [],
+  "socket": false,
+  "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
+  "download": "This must link to a .zip file of the current version",
+  "background": "systems/sifrp/assets/iron-throne-logo.png",
+  "grid": {
+    "type": 1,
+    "distance": 5,
+    "units": "m",
+    "diagonals": 0
+  },
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "composure"
+}

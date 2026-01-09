@@ -1,0 +1,369 @@
+{
+    "SIFRP_SYSTEM": {
+        "Ability": {
+            "label": "Compétence",
+            
+            "Agility": "Agilité",
+            "AnimalHandling": "Dressage",
+            "Athletics": "Athlétisme",
+            "Awareness": "Vigilance",
+            "Cunning": "Astuce",
+            "Deception": "Tromperie",
+            "Endurance": "Endurance",
+            "Fighting": "Combat",
+            "Healing": "Soins",
+            "Language": "Langage",
+            "Knowledge": "Connaissances",
+            "Marksmanship": "Tir",
+            "Persuasion": "Persuasion",
+            "Status": "Statut",
+            "Stealth": "Discrétion",
+            "Survival": "Survie",
+            "Thievery": "Larcin",
+            "Warfare": "Art de la guerre",
+            "Will": "Volonté"
+        },       
+        "Speciality": {
+            "label": "Spécialité",
+
+            "Acrobatics": "Acrobaties",
+            "Balance": "Équilibre",
+            "Contortions": "Contorsion",
+            "Dodge": "Esquive",
+            "Quickness": "Rapidité",
+
+            "Charm_A": "Charme",
+            "Drive": "Conduite",
+            "Ride": "Équitation",
+            "Train": "Entraînement",
+
+            "Climb": "Escalade",
+            "Jump": "Saut",
+            "Run": "Course",
+            "Strength": "Force",
+            "Swim": "Natation",
+            "Throw": "Lancer",
+
+            "Empathy": "Empathie",
+            "Notice": "Attention",
+
+            "Decipher": "Décryptage",
+            "Logic": "Logique",
+            "Memory": "Mémoire",
+
+            "Act": "Comédie",
+            "Bluff": "Bluff",
+            "Cheat": "Triche",
+            "Disguise": "Déguisement",
+
+            "Resilience": "Résilience",
+            "Stamina": "Résistance",
+
+            "Axes": "Haches",
+            "Bludgeons": "Armes contondantes",
+            "Brawling": "Bagarre",
+            "Fencing": "Escrime",
+            "LongBlades": "Lames longues",
+            "Polearms": "Armes d'hast",
+            "Shields": "Boucliers",
+            "ShortBlades": "Lames courtes",
+            "Spears": "Lances",
+
+            "Diagnose": "Diagnostic",
+            "TreatAilment": "Traiter Maladie",
+            "TreatInjury": "Traiter Blessure",
+
+            "Common": "Commun",
+            "HighValyrian": "Haut Valyrien",
+
+            "Education": "Éducation",
+            "Research": "Recherche",
+            "Streetwise": "Connaissance de la rue",
+
+            "Bows": "Arcs",
+            "Crossbows": "Arbalètes",
+            "Siege": "Siège",
+            "Thrown": "Armes de jet",
+
+            "Bargain": "Négociation",
+            "Charm_P": "Charme",
+            "Convince": "Convaincre",
+            "Incite": "Inciter",
+            "Intimidate": "Intimidation",
+            "Seduce": "Séduction",
+            "Taunt": "Provocation",
+
+            "Breeding": "Lignage",
+            "Reputation": "Réputation",
+            "Stewardship": "Intendance",
+            "Tournaments": "Tournois",
+
+            "BlendIn": "Se fondre",
+            "Sneak": "Furtivité",
+
+            "Forage": "Cueillir",
+            "Hunt": "Chasser",
+            "Orientation": "Orientation",
+            "Track": "Pister",
+
+            "PickLock": "Crochetage",
+            "SleightOfHand": "Prestidigitation",
+            "Steal": "Voler",
+
+            "Command": "Commandement",
+            "Strategy": "Stratégie",
+            "Tactics": "Tactique",
+
+            "Courage": "Courage",
+            "Coordinate": "Coordination",
+            "Dedication": "Dévouement"
+        },
+        "SheetLabels": {
+            "Actor": "Fiche de Personnage SIFRP",
+            "Item": "Fiche d'Objet SIFRP"
+        },
+        "Actor": {
+            "Tabs": {
+                "Details": "Détails",
+                "Abilities": "Capacités",
+                "Combat": "Combat & Intrigue",
+                "Gear": "Équipement",
+                "Effects": "Effets"
+            },
+            "Character": {  
+                "Fields": {
+                    "biography": {
+                        "header": "HISTOIRE PERSONNELLE"
+                    },
+                    "health": {
+                        "label": "Santé",
+                        "tooltip": "Santé = Rang d'Endurance x 3"
+                    },
+                     "injuries": {
+                        "label": "Lésions",
+                        "tooltip": "Les lésions imposent une pénalité de -1 à tous les tests"
+                    },
+                    "wounds": {
+                        "label": "Blessures",
+                        "tooltip": "Les blessures imposent une pénalité de -1D à tous les tests"               
+                    },
+                    "combat": {
+                        "header": "COMBAT",
+                        "defense": {
+                            "label": "Défense",
+                            "tooltip": "Agilité + Athlétisme + Vigilance + Bonus Défensif - Pénalité d'Armure",
+                            "bonus": "Bonus"
+                        },
+                        "initiative": {
+                            "label": "Initiative"
+                        }
+                    },
+                    "intrigue":{
+                        "header": "INTRIGUE",
+                        "defense": {
+                            "label": "Défense",
+                            "tooltip": "Vigilance + Astuce + Statut",
+                            "bonus": "Bonus"
+                        },                 
+                        "initiative": {
+                            "label": "Initiative"
+                        }
+                    },                    
+                    "armor": {
+                        "header": "ARMURE",
+                        "placeholder": "Vêtements",
+                        "rating": "Valeur d'Armure",
+                        "penalty": "Pénalité d'Armure",
+                        "bulk": "Encombrement"
+                    },
+                    "composure": {
+                        "label": "Sang-froid",
+                        "bonus": "Bonus de Sang-froid"
+                    },
+                    "frustration": {
+                        "label": "Frustration",
+                        "tooltip": "-1D en Tromperie et Persuasion"
+                    },
+                    "fatigue": {
+                        "label": "Fatigue",
+                        "tooltip": "-1 à tous les tests"
+                    },
+                    "qualities": {
+                        "header": "QUALITÉS",
+                        "tooltip":{
+                            "add" : "Ajouter",
+                            "delete": "Supprimer" 
+                        },
+                        "placeholder": "description...",
+                        "destiny": {
+                            "label": "Destin",
+                            "base": "Base",
+                            "invested": "Investis",
+                            "bonus": "Bonus",
+                            "spent": "Dépensés",
+                            "burnt": "Brûlés",
+                            "available": "Disponibles"                                                                             
+                        },
+                        "glory": {
+                            "label": "Gloire",
+                            "total": "Total",
+                            "spent": "Dépensée",
+                            "available":"Disponible"
+                        },
+                        "experience": {
+                            "label": "Expérience",
+                            "total": "Totale",
+                            "spent": "Dépensée",
+                            "available":"Disponible"
+                        },
+                        "benefits": {
+                            "header": "Avantages",
+                            "name": "Nom",
+                            "effect": "Effet",
+                            "placeholder":"Effet "
+                        },
+                        "drawbacks": {
+                            "header": "Handicaps",
+                            "name": "Nom",
+                            "effect": "Effet",
+                            "placeholder":"Effet "
+                        },
+                        "virtues": "Vertus",
+                        "vices": "Vices",
+                        "goals": "Objectifs",
+                        "motivations": "Motivations",
+                        "mannerisms":  "Tics de langage",
+                        "distinguishingFeatures": "Signes distinctifs",
+                        "retainers":  "Suivants",
+                        "allies": "Alliés",
+                        "enemies": "Ennemis",
+                        "oaths": "Serments"
+                    },
+                    "details": {
+                        "header": "Détails du Personnage",
+                        "age": "Âge",
+                        "gender": "Sexe",
+                        "eyeColor": "Couleur des yeux",
+                        "hairColor":"Couleur des cheveux",
+                        "height": "Taille",
+                        "weight": "Poids",
+                        "house": "Maison",
+                        "motto": "Devise"
+                    },
+                    "coinage": {
+                        "header": "MONNAIE",
+                        "copper": {
+                            "label": "Sous de Cuivre",
+                            "abbr": "SC"
+                        },
+                        "silver": {
+                            "label": "Cerfs d'Argent",
+                            "abbr": "CA"
+                        },
+                        "gold": {
+                            "label": "Dragons d'Or",
+                            "abbr": "DO"
+                        },
+                        "rates": {
+                            "ss2cp": "1 Cerf d'Argent = 56 Sous de Cuivre",
+                            "gd2ss":"1 Dragon d'Or = 210 Cerfs (11 760 Sous)"
+                        }
+                    }    
+                }
+            },
+            "NPC": {
+                "Fields": {}
+            }
+        },
+        "Item": {
+            "Tabs": {
+                "Attributes": "Attributs",
+                "Description": "Description"
+            },
+            "Fields": {
+                "cost": "Coût",
+                "quantity": "Quantité",
+                "weight": "Poids"
+            },
+            "Gear": {
+                "label": "Équipement"
+            },
+            "Weapon":{
+                "label": "Weapon", 
+                "Fields": {
+                    "type": {
+                        "melee": "Melee",
+                        "ranged": "Ranged"
+                    },
+                    "quality": {
+                        "poor": "Poor",
+                        "common": "Common",
+                        "superior": "Superior",
+                        "extraordinary": "Extraordinary"
+                    },
+                    "training": "Training",
+                    "damageAbility": "Damage",
+                    "damageModifier": "Modifier",
+                    "qualities": {
+                        "label": "Qualities",
+                        "placeholder": "e.g. Slow, Powerful, Piercing 1..."
+                    }
+                }
+            },
+            "Mount":{
+                "label": "Montures & Bétail"
+            }        
+        }
+    },
+
+    "TYPES": {
+        "Actor": {
+            "character": "Personnage Joueur",
+            "npc": "Personnage Non-Joueur"
+        },
+        "Item": {
+            "gear": "Équipement",
+            "mount": "Monture & Bétail",
+            "weapon": "Arme"
+
+        }
+    },
+
+    "GAME": {
+        "SETTINGS": {
+            "DebugLogs": {
+                "name": "Activer les logs de débogage",
+                "hint": "Si activé, des messages détaillés seront affichés dans la console (F12). Garder désactivé en jeu."
+            },
+            "CurrentVersion" : {
+                "name": "Version Actuelle"
+            }
+        },
+        "MESSAGES":{
+            "DataControl": {
+                "specialityExceedAbility": "Le rang de spécialité ne peut pas dépasser le rang de capacité.",
+                "noNegativeValue": "doit être égal ou supérieur à 0."
+            },
+            "Roll": {
+                "TestAction": "tests",
+                "TestDice": "Dés de Test",
+                "BonusDice": "Dés de Bonus",
+                "DropAction": "Écarter",
+                "Penalties": "Pénalités",
+                "Bonus": "Bonus"
+            },
+            "NightsWatch": "Pour la montre !"
+        },
+        "DIALOG":{
+            "RollModifiers":{
+                "Title": "Modificateurs de Test",
+                "SubmitLabel": "Lancer",
+                "CancelLabel": "Annuler",
+                "BonusDice": "Modificateur : Dés de Bonus",
+                "BonusModifier": "Modificateur : Score Fixe",
+                "PenaltyDice": "Modificateur : Dés de Pénalité",
+                "PenaltyModifier": "Modificateur : Pénalité Fixe"
+            }
+        }
+    }
+}
