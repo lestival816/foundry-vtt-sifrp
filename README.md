@@ -26,7 +26,7 @@ Please report issues on GitHub!
 ## Support
 
 - 🐛 **Bug reports**: [GitHub Issues](https://github.com/lestival816/foundry-vtt-sifrp/issues)
-- 💬 **Discord**: [Discord](.lestival)
+- 💬 **Discord**: .lestival
 
 ## Credits
 
