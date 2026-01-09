@@ -4,7 +4,7 @@
   "description": "An unofficial system implementation for of A Song of Ice and Fire Roleplaying game by Green Ronin Publishing. Based on the Boilerplate System by Asacolips.",
   "authors": [
     {
-      "name": "Lestival",
+      "name": "Lesti",
       "discord": ".lestival"
     }
   ],
@@ -35,10 +35,10 @@
       "paths": ["css", "lang", "templates"]
     }
   },
-  "url": "Replace this with a link to your public repository",
+  "url": "https://github.com/lestival816/foundry-vtt-sifrp",
   "license": "LICENSE.txt",
   "readme": "README.md",
-  "bugs": "Replace this with a link to file issues or tickets",
+  "bugs": "https://github.com/lestival816/foundry-vtt-sifrp/issues",
   "changelog": "CHANGELOG.md",
   "media": [
     {
@@ -69,8 +69,8 @@
   "packs": [],
   "packFolders": [],
   "socket": false,
-  "manifest": "Replace this with a link to the /latest release system.json so people can receive updates after they've installed the system",
-  "download": "This must link to a .zip file of the current version",
+  "manifest": "https://raw.githubusercontent.com/lestival816/foundry-vtt-sifrp/refs/heads/main/system.json",
+  "download": "https://raw.githubusercontent.com//lestival816/foundry-vtt-sifrp/raw/refs/heads/main/sifrp.zip",
   "background": "systems/sifrp/assets/iron-throne-logo.png",
   "grid": {
     "type": 1,
