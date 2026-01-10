@@ -12,7 +12,8 @@ This is an unofficial implementation for **A Song of Ice and Fire Roleplaying: G
 
 ⚠️ **ALPHA VERSION - Use at your own risk**  
 This is the first release of the system and may contain bugs or incomplete features.  
-Please report issues on GitHub!
+Please report issues on GitHub! 
+Any feedback is welcome.
 
 1. Create a new World
 2. Select **A Song of Ice and Fire Roleplaying** as the system
@@ -36,4 +37,4 @@ Please report issues on GitHub!
 - **A Song of Ice and Fire** is (c) 1996-2009 George R. R. Martin. All rights reserved.
 - **Developer**: Lesti
 
-_For the Watch!_
+⬤ _For the Watch!_
