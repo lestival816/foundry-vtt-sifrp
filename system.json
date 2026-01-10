@@ -70,7 +70,7 @@
   "packFolders": [],
   "socket": false,
   "manifest": "https://raw.githubusercontent.com/lestival816/foundry-vtt-sifrp/refs/heads/main/system.json",
-  "download": "https://raw.githubusercontent.com//lestival816/foundry-vtt-sifrp/raw/refs/heads/main/sifrp.zip",
+  "download": "https://github.com/lestival816/foundry-vtt-sifrp/raw/refs/heads/main/sifrp.zip",
   "background": "systems/sifrp/assets/iron-throne-logo.png",
   "grid": {
     "type": 1,
