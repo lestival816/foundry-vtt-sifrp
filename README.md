@@ -21,6 +21,7 @@ Please report issues on GitHub!
 
 **Known limitations**:
 
+- Cannot add custom languages
 - Item icon may reset to default after game reload
 
 ## Support
