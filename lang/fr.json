@@ -7,10 +7,10 @@
             "AnimalHandling": "Dressage",
             "Athletics": "Athlétisme",
             "Awareness": "Vigilance",
-            "Cunning": "Astuce",
-            "Deception": "Tromperie",
+            "Cunning": "Ingéniosité",
+            "Deception": "Duperie",
             "Endurance": "Endurance",
-            "Fighting": "Combat",
+            "Fighting": "Corps à Corps",
             "Healing": "Soins",
             "Language": "Langage",
             "Knowledge": "Connaissances",
@@ -26,7 +26,7 @@
         "Speciality": {
             "label": "Spécialité",
 
-            "Acrobatics": "Acrobaties",
+            "Acrobatics": "Acrobatie",
             "Balance": "Équilibre",
             "Contortions": "Contorsion",
             "Dodge": "Esquive",
@@ -45,7 +45,7 @@
             "Throw": "Lancer",
 
             "Empathy": "Empathie",
-            "Notice": "Attention",
+            "Notice": "Observation",
 
             "Decipher": "Décryptage",
             "Logic": "Logique",
@@ -57,17 +57,17 @@
             "Disguise": "Déguisement",
 
             "Resilience": "Résilience",
-            "Stamina": "Résistance",
+            "Stamina": "Vigueur",
 
-            "Axes": "Haches",
-            "Bludgeons": "Armes contondantes",
-            "Brawling": "Bagarre",
+            "Axes": "Hache",
+            "Bludgeons": "Casse-Tête",
+            "Brawling": "Rixe",
             "Fencing": "Escrime",
-            "LongBlades": "Lames longues",
-            "Polearms": "Armes d'hast",
-            "Shields": "Boucliers",
-            "ShortBlades": "Lames courtes",
-            "Spears": "Lances",
+            "LongBlades": "Lame longue",
+            "Polearms": "Arme d'Hast",
+            "Shields": "Bouclier",
+            "ShortBlades": "Lame courte",
+            "Spears": "Lance",
 
             "Diagnose": "Diagnostic",
             "TreatAilment": "Traiter Maladie",
@@ -80,35 +80,35 @@
             "Research": "Recherche",
             "Streetwise": "Connaissance de la rue",
 
-            "Bows": "Arcs",
-            "Crossbows": "Arbalètes",
+            "Bows": "Arc",
+            "Crossbows": "Arbalète",
             "Siege": "Siège",
-            "Thrown": "Armes de jet",
+            "Thrown": "Arme de jet",
 
-            "Bargain": "Négociation",
-            "Charm_P": "Charme",
+            "Bargain": "Marchander",
+            "Charm_P": "Charmer",
             "Convince": "Convaincre",
             "Incite": "Inciter",
-            "Intimidate": "Intimidation",
-            "Seduce": "Séduction",
-            "Taunt": "Provocation",
+            "Intimidate": "Intimider",
+            "Seduce": "Séduire",
+            "Taunt": "Pewrsifler",
 
-            "Breeding": "Lignage",
+            "Breeding": "Bienséance",
             "Reputation": "Réputation",
             "Stewardship": "Intendance",
-            "Tournaments": "Tournois",
+            "Tournaments": "Tournoi",
 
-            "BlendIn": "Se fondre",
+            "BlendIn": "Caméléon",
             "Sneak": "Furtivité",
 
-            "Forage": "Cueillir",
-            "Hunt": "Chasser",
+            "Forage": "Fourrageur",
+            "Hunt": "Chasse",
             "Orientation": "Orientation",
-            "Track": "Pister",
+            "Track": "Pistage",
 
             "PickLock": "Crochetage",
-            "SleightOfHand": "Prestidigitation",
-            "Steal": "Voler",
+            "SleightOfHand": "Passe-passe",
+            "Steal": "Vol",
 
             "Command": "Commandement",
             "Strategy": "Stratégie",
@@ -241,7 +241,7 @@
                     },
                     "details": {
                         "header": "Détails du Personnage",
-                        "age": "Âge",
+                        "age": "Age",
                         "gender": "Sexe",
                         "eyeColor": "Couleur des yeux",
                         "hairColor":"Couleur des cheveux",
@@ -289,24 +289,25 @@
                 "label": "Équipement"
             },
             "Weapon":{
-                "label": "Weapon", 
+                "label": "Arme", 
                 "Fields": {
                     "type": {
-                        "melee": "Melee",
-                        "ranged": "Ranged"
+                        "melee": "Corps à Corps",
+                        "ranged": "Tir"
                     },
                     "quality": {
-                        "poor": "Poor",
-                        "common": "Common",
-                        "superior": "Superior",
-                        "extraordinary": "Extraordinary"
+                        "label": "Qualitée",
+                        "poor": "Mauvaise",
+                        "common": "Commune",
+                        "superior": "Supérieure",
+                        "extraordinary": "Extraordinaire"
                     },
-                    "training": "Training",
-                    "damageAbility": "Damage",
-                    "damageModifier": "Modifier",
+                    "training": "Formation",
+                    "damageAbility": "Dommage",
+                    "damageModifier": "Modificateur",
                     "qualities": {
-                        "label": "Qualities",
-                        "placeholder": "e.g. Slow, Powerful, Piercing 1..."
+                        "label": "Attribut",
+                        "placeholder": "ex. Lente, Puissante, Perforante 1..."
                     }
                 }
             },
@@ -344,15 +345,28 @@
                 "specialityExceedAbility": "Le rang de spécialité ne peut pas dépasser le rang de capacité.",
                 "noNegativeValue": "doit être égal ou supérieur à 0."
             },
-            "Roll": {
-                "TestAction": "tests",
-                "TestDice": "Dés de Test",
-                "BonusDice": "Dés de Bonus",
-                "DropAction": "Écarter",
-                "Penalties": "Pénalités",
-                "Bonus": "Bonus"
+        "List": {
+            "create": "Créer un élement",
+            "delete": "Supprimer un élement",
+            "update": "Modifier un élement",
+            "placeholder": "description...",
+            "weaponHeaderAction": "Action",
+            "weaponHeaderDamage": "Dommage",
+            "addLanguage": "Ajouter une langue",
+            "deleteLanguage": "Supprimer la langue"
             },
-            "NightsWatch": "Pour la montre !"
+        "Roll": {
+            "TestAction": "fait un test de ",
+            "TestDice": "Dés de Test",
+            "CombatInitiativeAction": "fait un test d'initiative de combat",
+            "IntrigueInitiativeAction": "fait un test d'initiative d'intrigue",
+            "CombatAttackAction": "attaque avec",
+            "BonusDice": "Dés de Bonus",
+            "DropAction": "Écarter",
+            "Penalties": "Pénalités",
+            "Bonus": "Bonus"
+        },
+        "NightsWatch": "Pour la montre !"
         },
         "DIALOG":{
             "RollModifiers":{
