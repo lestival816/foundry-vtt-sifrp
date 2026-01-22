@@ -57,15 +57,27 @@ export default class SifrpActorBase extends foundry.abstract.TypeDataModel {
     // Iterate over ability names and create a new SchemaField for each, and for each the list of specialities.
     const abilitySchema ={};
     for (const [abiKey, abilityConfig] of Object.entries(SIFRP_SYSTEM.scores)) {
-      const specialitySchema = {};
-      for (const specKey of Object.keys(abilityConfig.specialities)) {
-        specialitySchema[specKey] = new fields.SchemaField({
-          value: new fields.NumberField({...requiredInteger, required: false, initial: 0, min: 0,}),
-        });
+      let specialityField;
+      const specKeys = Object.keys(abilityConfig.specialities);
+
+      //number of specilities is known and defined in Data Model
+      if (specKeys.length > 0) {       
+        const specialitySchema = {};
+        for (const specKey of specKeys) {
+          specialitySchema[specKey] = new fields.SchemaField({
+            value: new fields.NumberField({...requiredInteger, required: false, initial: 0, min: 0,}),
+          });
+        }
+        // Wrap the fixed list in a SchemaField
+        specialityField = new fields.SchemaField(specialitySchema);
+      } else {
+        //create a dynamic array in case of unknown number of specialities (languages)
+        specialityField = new fields.ObjectField({initial: {} });
       }
+
       abilitySchema[abiKey] = new fields.SchemaField({
         value: new fields.NumberField({...requiredInteger, initial: 2, min: 0,}),
-        specialities: new fields.SchemaField(specialitySchema),
+        specialities: specialityField
       });
     } 
     schema.abilities = new fields.SchemaField(abilitySchema);

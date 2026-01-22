@@ -33,6 +33,8 @@ export class SifrpActorSheet extends api.HandlebarsApplicationMixin(
       deleteDoc: this._deleteDoc,
       toggleEffect: this._toggleEffect,
       roll: this._onRoll,
+      addSpeciality: this._onAddDynamicSpeciality,
+      deleteSpeciality: this._onDeleteDynamicSpeciality,      
       addQuality: this._onAddQuality,
       removeQuality: this._onRemoveQuality,
       addSimpleQuality: this._onAddSimpleQuality,
@@ -633,6 +635,64 @@ export class SifrpActorSheet extends api.HandlebarsApplicationMixin(
    */
   async _onDropActor(event, data) {
     if (!this.actor.isOwner) return false;
+  }
+
+
+  /* -------------------------------------------- */
+
+  /**
+   * Handle dynamic specilities (languages)
+   * 
+   */
+
+  /**
+   * Handle adding a new dynamic specialty (e.g., a new Language).
+   * @param {MouseEvent} event                    The originating click event
+   * @param {HTMLElement} target                  The anchor element that triggered the action, containing data-path.
+   * @protected
+   * @static
+   */
+  static async _onAddDynamicSpeciality(event, target) {
+
+    event.preventDefault();
+
+    
+    // Extract the ability key from the data-ability attribute (e.g., "language")
+    const abilityKey = target.dataset.ability;
+    
+    // Generate a unique random ID to prevent key collisions in the ObjectField
+    const randomId = foundry.utils.randomID();
+
+    
+    // Prepare the update object using a template literal for the path
+    const updateData = {
+      [`system.abilities.${abilityKey}.specialities.${randomId}`]: {
+        label: "",
+        value: 1 
+      }
+    };
+    
+    // Execute the update on the actor document
+    return await this.actor.update(updateData);
+  }
+
+  /**
+   * Handle deleting a dynamic specialty from an ObjectField.
+   * @param {MouseEvent} event                    The originating click event
+   * @param {HTMLElement} target                  The anchor element that triggered the action, containing data-path.
+   * @protected
+   * @static
+   */
+  static async _onDeleteDynamicSpeciality(event, target) {
+    event.preventDefault();
+    
+    // Destructure ability and speciality keys from the dataset (data-ability, data-speciality)
+    const { ability, speciality } = target.dataset;
+    
+    return await this.actor.update({
+      [`system.abilities.${ability}.specialities.-=${speciality}`]: null
+    });
+    
   }
 
   /* -------------------------------------------- */
