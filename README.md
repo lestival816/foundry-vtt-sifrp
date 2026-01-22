@@ -22,8 +22,8 @@ Any feedback is welcome.
 
 **Known limitations**:
 
-- Cannot add custom languages
 - Item icon may reset to default after game reload
+- Data inconsistency between caharcter sheet and token
 
 ## Support
 
