@@ -13,36 +13,36 @@
             "Fighting": "Corps à Corps",
             "Healing": "Soins",
             "Language": "Langage",
-            "Knowledge": "Connaissances",
+            "Knowledge": "Connaissance",
             "Marksmanship": "Tir",
             "Persuasion": "Persuasion",
             "Status": "Statut",
             "Stealth": "Discrétion",
             "Survival": "Survie",
             "Thievery": "Larcin",
-            "Warfare": "Art de la guerre",
+            "Warfare": "Art Militaire",
             "Will": "Volonté"
         },       
         "Speciality": {
             "label": "Spécialité",
 
-            "Acrobatics": "Acrobatie",
+            "Acrobatics": "Acrobaties",
             "Balance": "Équilibre",
-            "Contortions": "Contorsion",
+            "Contortions": "Contorsions",
             "Dodge": "Esquive",
-            "Quickness": "Rapidité",
+            "Quickness": "Vivacité",
 
             "Charm_A": "Charme",
             "Drive": "Conduite",
             "Ride": "Équitation",
-            "Train": "Entraînement",
+            "Train": "Excercices",
 
             "Climb": "Escalade",
             "Jump": "Saut",
             "Run": "Course",
             "Strength": "Force",
             "Swim": "Natation",
-            "Throw": "Lancer",
+            "Throw": "Jet",
 
             "Empathy": "Empathie",
             "Notice": "Observation",
@@ -59,31 +59,30 @@
             "Resilience": "Résilience",
             "Stamina": "Vigueur",
 
-            "Axes": "Hache",
+            "Axes": "Haches",
             "Bludgeons": "Casse-Tête",
             "Brawling": "Rixe",
             "Fencing": "Escrime",
-            "LongBlades": "Lame longue",
+            "LongBlades": "Lames longues",
             "Polearms": "Arme d'Hast",
-            "Shields": "Bouclier",
-            "ShortBlades": "Lame courte",
-            "Spears": "Lance",
+            "Shields": "Boucliers",
+            "ShortBlades": "Lames courtes",
+            "Spears": "Lances",
 
             "Diagnose": "Diagnostic",
-            "TreatAilment": "Traiter Maladie",
-            "TreatInjury": "Traiter Blessure",
+            "TreatAilment": "Infections",
+            "TreatInjury": "Blessures",
 
-            "Common": "Commun",
-            "HighValyrian": "Haut Valyrien",
+            "Common": "Langue Commune",
 
             "Education": "Éducation",
-            "Research": "Recherche",
+            "Research": "Recherches",
             "Streetwise": "Connaissance de la rue",
 
-            "Bows": "Arc",
-            "Crossbows": "Arbalète",
+            "Bows": "Arcs",
+            "Crossbows": "Arbalètes",
             "Siege": "Siège",
-            "Thrown": "Arme de jet",
+            "Thrown": "Jet",
 
             "Bargain": "Marchander",
             "Charm_P": "Charmer",
@@ -91,12 +90,12 @@
             "Incite": "Inciter",
             "Intimidate": "Intimider",
             "Seduce": "Séduire",
-            "Taunt": "Pewrsifler",
+            "Taunt": "Persifler",
 
             "Breeding": "Bienséance",
             "Reputation": "Réputation",
             "Stewardship": "Intendance",
-            "Tournaments": "Tournoi",
+            "Tournaments": "Tournois",
 
             "BlendIn": "Caméléon",
             "Sneak": "Furtivité",
@@ -107,7 +106,7 @@
             "Track": "Pistage",
 
             "PickLock": "Crochetage",
-            "SleightOfHand": "Passe-passe",
+            "SleightOfHand": "Passe-Passe",
             "Steal": "Vol",
 
             "Command": "Commandement",
@@ -125,7 +124,7 @@
         "Actor": {
             "Tabs": {
                 "Details": "Détails",
-                "Abilities": "Capacités",
+                "Abilities": "Compétences",
                 "Combat": "Combat & Intrigue",
                 "Gear": "Équipement",
                 "Effects": "Effets"
@@ -151,7 +150,7 @@
                         "header": "COMBAT",
                         "defense": {
                             "label": "Défense",
-                            "tooltip": "Agilité + Athlétisme + Vigilance + Bonus Défensif - Pénalité d'Armure",
+                            "tooltip": "Agilité + Athlétisme + Vigilance + Bonus Défensif - Malus d'Armure",
                             "bonus": "Bonus"
                         },
                         "initiative": {
@@ -162,7 +161,7 @@
                         "header": "INTRIGUE",
                         "defense": {
                             "label": "Défense",
-                            "tooltip": "Vigilance + Astuce + Statut",
+                            "tooltip": "Vigilance + Ingéniosité + Statut",
                             "bonus": "Bonus"
                         },                 
                         "initiative": {
@@ -173,7 +172,7 @@
                         "header": "ARMURE",
                         "placeholder": "Vêtements",
                         "rating": "Valeur d'Armure",
-                        "penalty": "Pénalité d'Armure",
+                        "penalty": "Malus d'Armure",
                         "bulk": "Encombrement"
                     },
                     "composure": {
@@ -182,21 +181,21 @@
                     },
                     "frustration": {
                         "label": "Frustration",
-                        "tooltip": "-1D en Tromperie et Persuasion"
+                        "tooltip": "-1D en Duperie et Persuasion"
                     },
                     "fatigue": {
                         "label": "Fatigue",
                         "tooltip": "-1 à tous les tests"
                     },
                     "qualities": {
-                        "header": "QUALITÉS",
+                        "header": "ATTRIBUTS",
                         "tooltip":{
                             "add" : "Ajouter",
                             "delete": "Supprimer" 
                         },
                         "placeholder": "description...",
                         "destiny": {
-                            "label": "Destin",
+                            "label": "Destinée",
                             "base": "Base",
                             "invested": "Investis",
                             "bonus": "Bonus",
@@ -207,14 +206,14 @@
                         "glory": {
                             "label": "Gloire",
                             "total": "Total",
-                            "spent": "Dépensée",
-                            "available":"Disponible"
+                            "spent": "Dépensés",
+                            "available":"Disponibles"
                         },
                         "experience": {
                             "label": "Expérience",
-                            "total": "Totale",
-                            "spent": "Dépensée",
-                            "available":"Disponible"
+                            "total": "Total",
+                            "spent": "Dépensés",
+                            "available":"Disponibles"
                         },
                         "benefits": {
                             "header": "Avantages",
@@ -223,7 +222,7 @@
                             "placeholder":"Effet "
                         },
                         "drawbacks": {
-                            "header": "Handicaps",
+                            "header": "Défauts",
                             "name": "Nom",
                             "effect": "Effet",
                             "placeholder":"Effet "
@@ -232,8 +231,8 @@
                         "vices": "Vices",
                         "goals": "Objectifs",
                         "motivations": "Motivations",
-                        "mannerisms":  "Tics de langage",
-                        "distinguishingFeatures": "Signes distinctifs",
+                        "mannerisms":  "Habitudes, Tics et Manières",
+                        "distinguishingFeatures": "Traits distinctifs",
                         "retainers":  "Suivants",
                         "allies": "Alliés",
                         "enemies": "Ennemis",
@@ -241,10 +240,10 @@
                     },
                     "details": {
                         "header": "Détails du Personnage",
-                        "age": "Age",
+                        "age": "Âge",
                         "gender": "Sexe",
-                        "eyeColor": "Couleur des yeux",
-                        "hairColor":"Couleur des cheveux",
+                        "eyeColor": "Couleur yeux",
+                        "hairColor":"Couleur cheveux",
                         "height": "Taille",
                         "weight": "Poids",
                         "house": "Maison",
@@ -298,16 +297,16 @@
                     "quality": {
                         "label": "Qualitée",
                         "poor": "Mauvaise",
-                        "common": "Commune",
+                        "common": "Ordinaire",
                         "superior": "Supérieure",
                         "extraordinary": "Extraordinaire"
                     },
                     "training": "Formation",
-                    "damageAbility": "Dommage",
+                    "damageAbility": "Dégâts",
                     "damageModifier": "Modificateur",
                     "qualities": {
-                        "label": "Attribut",
-                        "placeholder": "ex. Lente, Puissante, Perforante 1..."
+                        "label": "Qualités",
+                        "placeholder": "ex. Lente, Puissante, Encombrante 1..."
                     }
                 }
             },
