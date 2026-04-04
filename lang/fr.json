@@ -332,8 +332,8 @@
     "GAME": {
         "SETTINGS": {
             "DebugLogs": {
-                "name": "Activer les logs de débogage",
-                "hint": "Si activé, des messages détaillés seront affichés dans la console (F12). Garder désactivé en jeu."
+                "name": "Activer les logs de debug",
+                "hint": "Si activé, des messages détaillés seront affichés dans la console (accessible en pressant F12). Gardez désactivé durant une partie."
             },
             "CurrentVersion" : {
                 "name": "Version Actuelle"
@@ -372,10 +372,10 @@
                 "Title": "Modificateurs de Test",
                 "SubmitLabel": "Lancer",
                 "CancelLabel": "Annuler",
-                "BonusDice": "Modificateur : Dés de Bonus",
-                "BonusModifier": "Modificateur : Score Fixe",
-                "PenaltyDice": "Modificateur : Dés de Pénalité",
-                "PenaltyModifier": "Modificateur : Pénalité Fixe"
+                "BonusDice": "Dés de Bonus",
+                "BonusModifier": "Bonus",
+                "PenaltyDice": "Dés de Malus",
+                "PenaltyModifier": "Malus"
             }
         }
     }
