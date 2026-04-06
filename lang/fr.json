@@ -293,7 +293,7 @@
                         "melee": "Corps à Corps",
                         "ranged": "À distance"
                     },
-                    "typeLabel": "Type d'arme",
+                    "typeLabel": "Type",
                     "quality": {
                         "label": "Qualitée",
                         "poor": "Mauvaise",
