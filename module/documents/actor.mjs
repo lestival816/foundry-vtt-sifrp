@@ -211,8 +211,8 @@ export class SifrpActor extends Actor {
     system.combatDefense.value = system.agility + system.athletics + system.awareness + defenseBonus - armorPenalty;
 
     // ---  IMPROVEMENT POINTS ---
-    // Destiny Points: Available = Base + Bonus - Invested - Spent - Burnt
-    system.qualities.destiny.available = system.qualities.destiny.base + system.qualities.destiny.bonus - system.qualities.destiny.invested - system.qualities.destiny.spent - system.qualities.destiny.burnt;
+    // Destiny Points: Available = Base + Gained - Invested - Spent - Burnt
+    system.qualities.destiny.available = system.qualities.destiny.base + system.qualities.destiny.gained - system.qualities.destiny.invested - system.qualities.destiny.spent - system.qualities.destiny.burnt;
   }
 
   /**
