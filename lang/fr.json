@@ -189,16 +189,11 @@
                     },
                     "qualities": {
                         "header": "ATTRIBUTS",
-                        "tooltip":{
-                            "add" : "Ajouter",
-                            "delete": "Supprimer" 
-                        },
-                        "placeholder": "description...",
                         "destiny": {
                             "label": "Destinée",
                             "base": "Base",
+                            "gained": "Gagnés",
                             "invested": "Investis",
-                            "bonus": "Bonus",
                             "spent": "Dépensés",
                             "burnt": "Brûlés",
                             "available": "Disponibles"                                                                             
@@ -250,7 +245,7 @@
                         "motto": "Devise"
                     },
                     "coinage": {
-                        "header": "MONNAIE",
+                        "header": "ARGENT",
                         "copper": {
                             "label": "Sous de Cuivre",
                             "abbr": "SC"
@@ -289,11 +284,16 @@
             },
             "Weapon":{
                 "label": "Arme", 
+                "button":{
+                    "attack": "Attaque",
+                    "damages": "Dégâts"
+                },
                 "Fields": {
                     "type": {
                         "melee": "Corps à Corps",
-                        "ranged": "Tir"
+                        "ranged": "À distance"
                     },
+                    "typeLabel": "Type d'arme",
                     "quality": {
                         "label": "Qualitée",
                         "poor": "Mauvaise",
@@ -303,7 +303,7 @@
                     },
                     "training": "Formation",
                     "damageAbility": "Dégâts",
-                    "damageModifier": "Modificateur",
+                    "damageModifier": "Modif.",
                     "qualities": {
                         "label": "Qualités",
                         "placeholder": "ex. Lente, Puissante, Encombrante 1..."
@@ -350,7 +350,7 @@
             "update": "Modifier un élement",
             "placeholder": "description...",
             "weaponHeaderAction": "Action",
-            "weaponHeaderDamage": "Dommage",
+            "weaponHeaderDamage": "Dégâts",
             "addLanguage": "Ajouter une langue",
             "deleteLanguage": "Supprimer la langue"
             },

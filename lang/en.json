@@ -192,8 +192,8 @@
                         "destiny": {
                             "label": "Destiny",
                             "base": "Base",
+                            "gained": "Gained",
                             "invested": "Invested",
-                            "bonus": "Bonus",
                             "spent": "Spent",
                             "burnt": "Burnt",
                             "available": "Available"                                                                             
@@ -379,5 +379,4 @@
             }
         }
     }
-
 }
