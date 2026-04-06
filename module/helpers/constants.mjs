@@ -7,9 +7,9 @@ SIFRP_CONSTANTS.Settings = {
     DEBUG_LOGS: "debugLogs"
 }
 
-// SIRFRP_CONSTANTS.Default_Icons = {
-//     weapon: "icons/weapons/swords/sword-guard-steel.webp",
-//     armor: "icons/armor/chest/chest-armor-steel-grey.webp",
-// }
-
-//  _preCreate, updates.img = SIFRP_SYSTEM.defaultIcons[this.type];
+SIFRP_CONSTANTS.Default_Icons = {
+    weapon: "systems/sifrp/assets/icons/dagger.svg",
+    armor: "systems/sifrp/assets/icons/armor.svg",
+    gear: "systems/sifrp/assets/icons/bag.svg",
+    mount: "systems/sifrp/assets/icons/horse.svg"
+}

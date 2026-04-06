@@ -6,6 +6,19 @@ import LOGGER from '../utils/logger.mjs'
  * @extends {Item}
  */
 export class SifrpItem extends Item {
+
+  /**
+   * Extend the constructor to define default icons
+   * @param {*} data 
+   * @param {*} context 
+   */
+  constructor(data, context) {
+    if (!data.img) {
+      data.img = SIFRP_CONSTANTS.Default_Icons[data.type];
+    }
+    super(data, context);
+  }
+
   /**
    * Augment the basic Item data model with additional dynamic data.
    */
