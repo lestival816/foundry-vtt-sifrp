@@ -358,7 +358,13 @@ export class SifrpActorSheet extends api.HandlebarsApplicationMixin(
         //Prepare the damage modifier label
         const dmgMod = itemData.damageModifier
         let dmgModLabel = dmgMod < 0 ? String(dmgMod) : '+ ' + dmgMod;
-        let dmgValue = String(dmgAblData.value + dmgMod);
+        let dmgValue = dmgAblData.value + dmgMod;
+        // Damage can't be below 1
+        if (dmgValue <=1) {
+            dmgValue = String("1");
+        } else {
+            dmgValue = String(dmgValue);
+        }
   
         //Attach pre-calculated data to the item instance for the HBS template
         // We use a custom property 'hbsData'

@@ -57,6 +57,7 @@ export default class SifrpWeapon extends SifrpItemBase {
 
       // Flat damage modifier. Can be negative (e.g., -2 for a dagger) 
       // or positive (e.g., +3 for a Greatsword).
+      // Damage can't be below 1
       schema.damageModifier = new fields.NumberField({ 
         initial: 0, 
         integer: true, 

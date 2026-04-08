@@ -1,8 +1,10 @@
 // Import Logger util
 import LOGGER from '../utils/logger.mjs'
+// Import constants for icon files
+import { SIFRP_CONSTANTS } from '../helpers/constants.mjs';
 
 /**
- * Extend the basic Item with some very simple modifications.
+ * Extend the basic Item
  * @extends {Item}
  */
 export class SifrpItem extends Item {
@@ -80,33 +82,6 @@ export class SifrpItem extends Item {
    */
   async _onCreate(data, options, user) {
     await super._onCreate(data, options, user);
-//[Dev] To fix. Default image back on reload.
-    
-    const updates = {};
-
-    //Handle dynamic image assignment based on item type
-    // Only change the image if it's currently the default one
-    if (data.img === "icons/svg/item-bag.svg") {
-      let newImg = " ";
-      switch (data.type) {
-        case "weapon":
-          newImg = "icons/weapons/swords/shortsword-simple.webp";
-          break;
-        case "mount":
-          newImg = "icons/environment/creatures/horse-white.webp";
-          break;
-        case "gear":
-          newImg = "icons/svg/item-bag.svg";
-          break;
-        default:
-          newImg = "icons/svg/item-bag.svg";
-      }
-      if (newImg) {
-      updates.img = newImg; 
-      }
-    }
-    this.updateSource(updates);
-
   }
 
 
