@@ -47,7 +47,7 @@
       "thumbnail": "systems/sifrp/assets/iron-throne-logo.png"
     }
   ],
-  "version": "0.2.1",
+  "version": "0.2.2",
   "compatibility": {
     "minimum": "14.359",
     "verified": "14.363"
@@ -70,7 +70,7 @@
   "packFolders": [],
   "socket": false,
   "manifest": "https://raw.githubusercontent.com/lestival816/foundry-vtt-sifrp/main/system.json",
-  "download": "https://github.com/lestival816/foundry-vtt-sifrp/releases/download/v0.2.1/sifrp.zip",
+  "download": "https://github.com/lestival816/foundry-vtt-sifrp/releases/download/0.2.2/sifrp.zip",
   "background": "systems/sifrp/assets/iron-throne-logo.png",
   "grid": {
     "type": 1,
