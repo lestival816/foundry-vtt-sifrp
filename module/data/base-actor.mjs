@@ -159,6 +159,10 @@ export default class SifrpActorBase extends foundry.abstract.TypeDataModel {
 
       // Armor penalty reduces Agility tests and Combat Defense
       armorPenalty: this.armor?.penalty || 0,
+
+      // Defined in Character class
+      // NPC doen't have wound, therefore no penalty dice.
+      testDicePenalty: 0,
     };
 
     return modifiers;

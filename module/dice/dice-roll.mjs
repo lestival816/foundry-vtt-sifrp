@@ -132,7 +132,8 @@ export class SifrpDiceRoll {
     // Determine how many dice to keep (Test Dice minus Dice Penalties)
     let diceToKeep = testDice - modifiers.testDicePenalty - mPenaltyDice - trainingPenaltyDice;
 
-    //Each point of frustration gained imposes –1D on all Deception and Persuasion tests
+    // Each point of frustration gained imposes –1D on all Deception and Persuasion tests
+    // NPC doesn't have Frustration
     let frustrationApplied = 0;
     if (dataset.ability === "deception" || dataset.ability === "persuasion") {
       frustrationApplied = modifiers.frustrationPenalty;
