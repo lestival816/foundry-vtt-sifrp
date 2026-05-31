@@ -28,7 +28,7 @@ export class SifrpDiceRoll {
     await roll.toMessage({
       speaker: ChatMessage.getSpeaker({ actor: actor }),
       flavor: rollInfo.flavor,
-      rollMode: game.settings.get('core', 'rollMode'),
+      rollMode: game.settings.get('core', 'messageMode'),
     });
   }
 
@@ -50,7 +50,7 @@ export class SifrpDiceRoll {
     await roll.evaluate();
 
     // 4. Determine roll mode (public, private, etc.)
-    const rollMode = game.settings.get('core', 'rollMode');
+    const rollMode = game.settings.get('core', 'messageMode');
 
     // 5. Send to Chat
     await roll.toMessage({
