@@ -10,22 +10,20 @@ This is an unofficial implementation for **A Song of Ice and Fire Roleplaying: G
 
 ## Usage
 
-⚠️ **ALPHA VERSION - Use at your own risk**  
-This is the first release of the system and may contain bugs or incomplete features.  
-Please report issues on GitHub! 
-Any feedback is welcome.
-
 1. Create a new World
 2. Select **A Song of Ice and Fire Roleplaying** as the system
 3. Add actors, items, and scenes
 4. Enjoy Westeros in Foundry VTT!
 
-**Known limitations**:
+## Localization
 
-- Item icon may reset to default after game reload
-- Data inconsistency between caharcter sheet and token
+🇬🇧 English
+🇫🇷 French
 
 ## Support
+
+Please report issues on GitHub! 
+Any feedback is welcome.
 
 - 🐛 **Bug reports**: [GitHub Issues](https://github.com/lestival816/foundry-vtt-sifrp/issues)
 - 💬 **Discord**: .lestival
@@ -36,5 +34,8 @@ Any feedback is welcome.
 - **Game System**: A Song of Ice and Fire Roleplaying by Green Ronin Publishing
 - **A Song of Ice and Fire** is (c) 1996-2009 George R. R. Martin. All rights reserved.
 - **Developer**: Lesti
+
+Inspirations in Chronicle System for Foundry VTT by Kirlian Silvestre (3darkman) and SIFRPG Character Sheet for Roll20 VTT by Alex Ott.
+
 
 ⬤ _For the Watch!_
